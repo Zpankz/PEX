@@ -1,0 +1,27 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude configuration (if you want to keep this private)
+# .claude/
+
+# Obsidian configuration (you may want to include or exclude this)
+# .obsidian/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
