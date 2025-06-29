@@ -1,0 +1,76 @@
+title:
+- str
+entityType:
+- str
+exam:
+- str
+college:
+- str
+year:
+- int
+sitting:
+- str
+question:
+- int
+- str
+passRate:
+- float
+- int
+EC_expectedDomains:
+- NoneType
+- list
+EC_extraCredit:
+- NoneType
+- list
+EC_errorsCommon:
+- NoneType
+- list
+resources:
+- NoneType
+- list
+lo:
+- NoneType
+- list
+type:
+- NoneType
+- list
+- str
+up:
+- NoneType
+down:
+- NoneType
+related:
+- NoneType
+- list
+tags:
+- list
+dg-home:
+- bool
+dg-publish:
+- bool
+date created:
+- str
+date modified:
+- str
+LOs:
+- list
+order:
+- list
+- str
+concepts:
+- list
+aliases:
+- list
+field:
+- list
+- str
+node_size:
+- str
+section:
+- str
+focus:
+- str
+content:
+- list
+contrast:
+- str

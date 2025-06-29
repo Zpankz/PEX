@@ -1,0 +1,155 @@
+# Derived schema mapping for PEX repository
+# Each key is assigned a type and mapped to the ontology framework
+
+# Node attributes
+
+title:
+  type: string
+  ontology: Node
+  description: Question or concept label
+
+entityType:
+  type: string
+  ontology: Node
+  description: Exam item type (e.g., SAQ)
+
+exam:
+  type: string
+  ontology: Context
+  description: Exam identifier mapped to Perspective
+
+college:
+  type: string
+  ontology: Context
+  description: Professional body or institution
+
+year:
+  type: integer
+  ontology: Dimension.Temporal
+  description: Year of exam session
+
+sitting:
+  type: string
+  ontology: Dimension.Temporal
+  description: Exam sitting identifier
+
+question:
+  type: integer
+  ontology: Node
+  description: Question number within sitting
+
+passRate:
+  type: float
+  ontology: Property
+  description: Percentage pass rate
+
+EC_expectedDomains:
+  type: list[string]
+  ontology: Essence
+  description: Expected content domains for exam marking
+
+EC_extraCredit:
+  type: list[string]
+  ontology: Property
+  description: Features attracting extra marks
+
+EC_errorsCommon:
+  type: list[string]
+  ontology: Property
+  description: Frequently observed mistakes
+
+resources:
+  type: list[string]
+  ontology: Relation
+  description: Linked learning resources
+
+lo:
+  type: list[string]
+  ontology: Node
+  description: Associated learning outcomes
+
+type:
+  type: list[string]
+  ontology: Node
+  description: Classification tags (e.g., section, cluster)
+
+up:
+  type: list[string]
+  ontology: Relation
+  description: Hyperlinks to parent nodes
+
+down:
+  type: list[string]
+  ontology: Relation
+  description: Hyperlinks to child nodes
+
+related:
+  type: list[string]
+  ontology: Relation
+  description: Lateral links to related nodes
+
+tags:
+  type: list[string]
+  ontology: Context
+  description: Additional classification tags
+
+dg-home:
+  type: boolean
+  ontology: Property
+  description: Marked as home page in digital garden
+
+dg-publish:
+  type: boolean
+  ontology: Property
+  description: Indicates if node is published
+
+LOs:
+  type: list[string]
+  ontology: Node
+  description: Explicit list of learning outcomes
+
+order:
+  type: list[string]
+  ontology: Structure
+  description: Sequence order for nested items
+
+concepts:
+  type: list[string]
+  ontology: Node
+  description: Key concepts addressed
+
+aliases:
+  type: list[string]
+  ontology: Node
+  description: Alternative names for the node
+
+field:
+  type: list[string]
+  ontology: Context
+  description: Clinical domain or subfield
+
+node_size:
+  type: string
+  ontology: Property
+  description: Visual node size classification
+
+section:
+  type: string
+  ontology: Structure
+  description: Document section identifier
+
+focus:
+  type: string
+  ontology: Perspective
+  description: Topic focus for exam answer
+
+content:
+  type: list[string]
+  ontology: Property
+  description: Textual content segments
+
+contrast:
+  type: string
+  ontology: Relation
+  description: Node providing contrast or comparison
+
